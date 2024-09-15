@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
-import { CurrencyapidataService } from './currencyapidata.service';
+import { CurrencyapidataService } from '../currencyapidata/currencyapidata.service';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: '../app.component.html',
+  styleUrl: '../app.component.css'
 })
 export class AppComponent {
   title = 'mycurrencycalculator';
   currjson: any = [];
 
-  base = 'USD';
-  cont2 = 'USD';
+  base = 'UAH';
+  cont2 = 'UAH';
   result: string = '1';
 
 
