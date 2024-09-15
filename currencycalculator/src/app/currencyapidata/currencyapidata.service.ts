@@ -12,10 +12,10 @@ export class CurrencyapidataService {
 
  
   constructor(private http:HttpClient) { }
-  getcurrencydata(country1: string)
+  getcurrencydata(country1: string, country2:string)
   {
     //let url = 'https://api.apilayer.com/exchangerates_data/latest?base='  + country1;
-    let url = 'https://api.apilayer.com/exchangerates_data/latest?base='  + country1
+    let url = 'https://api.apilayer.com/exchangerates_data/latest?symbols='  + country2 + '&base=' + country1;
     return this.http.get(url, {headers : this.headers});
   }
 }
